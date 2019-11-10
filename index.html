@@ -1,15 +1,247 @@
 
 <html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    </head>
+    <!-- Wide card with share menu button -->
+<!-- Square card -->
+    <style>
+        .demo-card-square.mdl-card {
+            width: 320px;
+            height: 320px;
+        }
+        .demo-card-square > .mdl-card__title {
+            color: #fff;
+            background:
+            url('./assets/members/yukidaruma.jpeg') bottom right 15% no-repeat #46B6AC;
+        }
+        .demo-card-wide.mdl-card {
+            width: 512px;
+        }
+        .demo-card-wide > .mdl-card__title {
+            color: #fff;
+            height: 176px;
+            background: url('../assets/demos/welcome_card.jpg') center / cover;
+        }
+        .demo-card-wide > .mdl-card__menu {
+        color: #fff;
+        }
 
+        .demo-layout-transparent {
+            background: url('./assets/back-images/transparent.JPG') center / cover;
+            /* width: 100%;
+            height: 70%;  */
+        }
+        .demo-layout-transparent .mdl-layout__header,
+        .demo-layout-transparent .mdl-layout__drawer-button {
+            /* This background is dark, so we set text to white. Use 87% black instead if
+                your background is light. */
+            color: white;
+        }
+    </style>
+
+    <!-- Uses a header that contracts as the page scrolls down. -->
+    <style>
+    .demo-layout-waterfall .mdl-layout__header-row .mdl-navigation__link:last-of-type  { 
+        padding-right: 0;
+    }
+    </style>
+        
     <body>
-        <h1>Welcome to SaruKaniUX</h1>
-        <h2>Concept</h2>
-        私たちは, ものづくりを楽しんでおこなう学生団体です. </br>
-        現在は, AR技術周辺に興味があり, 開発をおこなっています.</br>
-        <h2>Members</h2>
-        + Kazuki Yamada </br>
-        + Yukidaruma</br>
-        + Marie</br>
-        + Mashiba</br>
+        <div class="demo-layout-waterfall mdl-layout mdl-js-layout">
+            <header class="mdl-layout__header mdl-layout__header--waterfall">
+                <!-- Top row, always visible -->
+                <div class="mdl-layout__header-row">
+                <!-- Title -->
+                <span class="mdl-layout-title">Saru Kani UX</span>
+                <div class="mdl-layout-spacer"></div>
+                <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable
+                            mdl-textfield--floating-label mdl-textfield--align-right">
+                    <label class="mdl-button mdl-js-button mdl-button--icon"
+                            for="waterfall-exp">
+                    <i class="material-icons">search</i>
+                    </label>
+                    <div class="mdl-textfield__expandable-holder">
+                    <input class="mdl-textfield__input" type="text" name="sample"
+                            id="waterfall-exp">
+                    </div>
+                </div>
+                </div>
+                <!-- Bottom row, not visible on scroll -->
+                <div class="mdl-layout__header-row">
+                <div class="mdl-layout-spacer"></div>
+                <!-- Navigation -->
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation__link" href="#top">Top</a>
+                    <a class="mdl-navigation__link" href="#concepts">Concepts</a>
+                    <a class="mdl-navigation__link" href="#works">Works</a>
+                    <a class="mdl-navigation__link" href="#members">Members</a>
+                </nav>
+                </div>
+            </header>
+            <div class="mdl-layout__drawer">
+                <span class="mdl-layout-title">Menu</span>
+                <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="">Link1</a>
+                <a class="mdl-navigation__link" href="">Link2</a>
+                <a class="mdl-navigation__link" href="">Link3</a>
+                <a class="mdl-navigation__link" href="">Link4</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div class="page-content">
+                    <div align="center">
+                    </br></br></br></br></br></br></br></br>
+                    <h1 id="top">Welcome to SaruKaniUX</h1>
+                    </br></br>
+                        <h4>私たちは, ものづくりを楽しんでおこなう学生団体です. </br>
+                        <h4>現在は, AR技術周辺に興味があり, 開発をおこなっています.</br>
+
+                    </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+                    
+                    <h2 id="concepts">Concepts</h2>
+
+                    </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+                    </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+                    </br></br></br></br></br>
+                    <h2 id="works">Works</h2>
+                    <h4>現在制作中のため, 出来次第更新されていきます. </h4> </br>
+                    <div align="center" class="works-content">
+                        <div class="demo-card-wide mdl-card mdl-shadow--2dp inline-block ">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">QRコード(読み取りなさい)</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                                目の前にQRコードの書かれた服をきている人がいたらカメラで撮ってみましょう. すると, 彼の服に隠されたデザインが出てきます.
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                View work
+                                </a>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                        </div>
+
+                        </br>
+
+                        <div class="demo-card-wide mdl-card mdl-shadow--2dp inline-block">
+                                <div class="mdl-card__title">
+                                    <h2 class="mdl-card__title-text">Works2(調整中)</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    調整中です
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    --------
+                                    </a>
+                                </div>
+                                <div class="mdl-card__menu">
+                                    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                    <i class="material-icons">share</i>
+                                    </button>
+                                </div>
+                        </div>
+
+                        </br>
+
+                        <div class="demo-card-wide mdl-card mdl-shadow--2dp inline-block">
+                            <div class="mdl-card__title">
+                                <h2 class="mdl-card__title-text">Works3(調整中)</h2>
+                            </div>
+                            <div class="mdl-card__supporting-text">
+                            調整中です
+                            </div>
+                            <div class="mdl-card__actions mdl-card--border">
+                                <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                --------
+                                </a>
+                            </div>
+                            <div class="mdl-card__menu">
+                                <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+                                <i class="material-icons">share</i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+                    </br></br></br></br></br></br></br></br></br></br></br></br></br></br>
+
+                    </div>
+                    <div id="members" align="center"><h2>Members</h2></div>
+                    <div align="center">
+                        <div class="inline-block">
+                            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand">
+                                    <h2 class="mdl-card__title-text">Kazuki Yamada</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    AR技術に興味があります.子供が喜ぶプロダクト開発が好きです.
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://twitter.com/ac_kazuki_y" target=”_blank”>
+                                    Twitter: @ac_kazuki_y
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline-block">
+                            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand">
+                                    <h2 class="mdl-card__title-text">雪田 瑠眞（YUKIDA ruma)</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    カラスとヒトとくらげが好きです.
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="https://twitter.com/ulusebaka" target=”_blank”>
+                                    Twitter: @ulusebaka
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="inline-block">
+                            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand">
+                                    <h2 class="mdl-card__title-text">Marie</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    触覚に興味がある変態です.
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Twitter: @-----
+                                    </a>
+                                </div>
+                            </div>
+                        </div>          
+                        <div class="inline-block">
+                            <div class="demo-card-square mdl-card mdl-shadow--2dp">
+                                <div class="mdl-card__title mdl-card--expand">
+                                    <h2 class="mdl-card__title-text">Mashiba</h2>
+                                </div>
+                                <div class="mdl-card__supporting-text">
+                                    ３度の飯より写真を取るのが好きです.
+                                </div>
+                                <div class="mdl-card__actions mdl-card--border">
+                                    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+                                    Twitter: @----
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </br></br>
+            </main>
+        </div>
     </body>
 </html>
